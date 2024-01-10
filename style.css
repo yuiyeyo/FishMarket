@@ -122,9 +122,11 @@ header img{
   text-align: justify;
   justify-content: center;
   align-content:center;
+  padding-left: 2%;
   height: 100%;
   width: 50%;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
   line-height: 1.1;
   color: #E9F2CF;
   transition: opacity 1s ease, transform 0.5s ease;
@@ -135,8 +137,8 @@ header img{
   display:flex;
   justify-content: center;
   align-content:center;
-	font-size: 25px;
-  top: 50%;
+
+  top: 40%;
   position: absolute;
   transform: translateY(-50%);
 }
