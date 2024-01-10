@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  max-width:2880px;
-  width:100%;
+  width:100vw;
+  max-width: 2880;
   overflow-x: hidden;
   font-family: 'Josefin Sans', sans-serif;
   background-color: #EEF5DB;
@@ -27,14 +27,20 @@ body {
 
 
 header {
-  width: 100vw;
+  width: 100%;
   height: 30vh;
   padding-bottom: 20px;
   padding-top: 5vh;
   text-align: center;
-  color: #000;
   font-size: 40px;
   line-height: 1.5;
+}
+@media only screen and (max-width: 768px)
+{
+  header
+  {
+    height: 15vh;
+  }
 }
 
 header img{
@@ -55,6 +61,14 @@ header img{
   transition: opacity 1s ease, transform 0.5s ease;
 }
 
+@media only screen and (max-width: 768px)
+{
+  .tagline
+  {
+    height: 50vh;
+  }
+}
+
 
 .tagline img{
   width: 50vw;
@@ -67,8 +81,6 @@ header img{
 
 .cont{
   position: relative;
-  left: 0%;
-  top:0;
   background: #020887;
 }
 
@@ -93,18 +105,27 @@ header img{
   align-content:center;
 }
 
+@media only screen and (max-width: 768px)
+{
+  .partone
+  {
+    justify-content: center;
+    height: 70vh;
+  }
+}
+
 .writing
 {
   opacity: 0;
   transform: translateY(50px);
   display:flex;
-  margin: auto;
+  text-align: justify;
   justify-content: center;
   align-content:center;
   height: 100%;
   width: 50%;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 1.1;
   color: #E9F2CF;
   transition: opacity 1s ease, transform 0.5s ease;
@@ -144,10 +165,28 @@ header img.animate, .calendar.animate, .parttwo h1.animate
   transition: opacity 1s ease, transform 0.5s ease;
 }
 
+@media only screen and (max-width: 768px)
+{
+  .writing
+  {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 20px;
+  }
+  .picture
+  {
+    display: none;
+  }
+  .parttwo{
+    height: 50vh;
+  }
+}
+
 .picture img
 {
   width: 90%;
-  height: auto;
+  height: 90%;
 }
 
 .parttwo
@@ -155,7 +194,7 @@ header img.animate, .calendar.animate, .parttwo h1.animate
   padding-top: 30px;
     padding: 10px;
     width: 100vw;
-    height: 900px;
+    height: 700px;
     background: linear-gradient(to bottom, #020664, #020450);
   color: #EEF5DB;
   text-align: center;
@@ -174,7 +213,10 @@ header img.animate, .calendar.animate, .parttwo h1.animate
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 1s ease, transform 0.5s ease;
-}
+  border: 0;
+    width:80%;
+  height:100%; 
+  }
 
 footer{
   background-color: #03074f;
