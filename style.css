@@ -213,7 +213,7 @@ header img.animate, .calendar.animate, .parttwo h1.animate
   transform: translateY(50px);
   transition: opacity 1s ease, transform 0.5s ease;
   border: 0;
-    width:80%;
+    width:80vw;
   height:100%; 
   }
 
