@@ -119,7 +119,7 @@ header img{
 }
 
 .writing.animate, .picture.animate, .tagline.animate,
-header img.animate, .calendar.animate
+header img.animate, .calendar.animate, .parttwoheading.animate
 {
   opacity: 1;
   transform: translateY(0);
@@ -146,11 +146,17 @@ header img.animate, .calendar.animate
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to bottom, #020664, #020450);
-    display: flex;
-    justify-content: center;
+  color: #EEF5DB;
+  text-align: center;
     align-content:center;
 
   }
+
+.parttwoheading
+{
+  opacity: 0;
+  transform: translateY(50px);
+}
 
 .calendar
 {
