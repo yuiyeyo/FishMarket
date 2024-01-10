@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width:2880px;
+  width:100%;
+  overflow-x: hidden;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #EEF5DB;
+  --s: 150px; /* control the size */
+  --c1: #EEF5DB;
+  --c2: #E9F2CF;
+
+  --_g: var(--c1) 0% 5%, var(--c2) 6% 15%, var(--c1) 16% 25%, var(--c2) 26% 35%,
+    var(--c1) 36% 45%, var(--c2) 46% 55%, var(--c1) 56% 65%, var(--c2) 66% 75%,
+    var(--c1) 76% 85%, var(--c2) 86% 95%, #0000 96%;
+  background: radial-gradient(50% 50% at 100% 0, var(--_g)),
+    radial-gradient(50% 50% at 0 100%, var(--_g)),
+    radial-gradient(50% 50%, var(--_g)),
+    radial-gradient(50% 50%, var(--_g)) calc(var(--s) / 2) calc(var(--s) / 2)
+      var(--c1);
+  background-size: var(--s) var(--s);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+header {
+  width: 100vw;
+  height: 30vh;
+  padding-bottom: 20px;
+  padding-top: 5vh;
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+header img{
+  width: 60vw;
+  
+}
+
+
+
+.tagline{
+  opacity: 0;
+  transform: translateY(50px);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #020887, #020879);
+  color: #EEF5DB;
+  transition: opacity 1s ease, transform 0.5s ease;
+}
+
+
+.tagline img{
+  width: 50vw;
+  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.5));
+}
+
+.tagline svg{
+  fill: #EEF5DB;
+}
+
+.cont{
+  position: relative;
+  left: 0%;
+  top:0;
+  background: #020887;
+}
+
+.wavy-div {
+  position: relative;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #020887;
+  
+    mask: url('https://raw.githubusercontent.com/yuiyeyo/FishMarket/0bc8c41f429e7c4cd97edb20ff1829637cafd571/assets/ocean.svg') center top / cover no-repeat;
+}
+
+.partone
+{
+  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #020879, #020664);
+  display: flex;
+  justify-content: space-between;
+  align-content:center;
+}
+
+.writing
+{
+  opacity: 0;
+  transform: translateY(50px);
+  display:flex;
+  justify-content: center;
+  align-content:center;
+  height: 100%;
+  padding: 30px;
+  width: 50vw;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.1;
+  color: #E9F2CF;
+  transition: opacity 1s ease, transform 0.5s ease;
+}
+
+.writing p
+{
+  padding: auto;
+  display:flex;
+  justify-content: center;
+  align-content:center;
+}
+
+.writing.animate, .picture.animate, .tagline.animate,
+header img.animate, .calendar.animate
+{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.picture
+{
+  opacity: 0;
+  transform: translateY(50px);
+  display:flex;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+  width: 50vw;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: #EEF5DB;
+  transition: opacity 1s ease, transform 0.5s ease;
+}
+
+.parttwo
+{
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #020664, #020450);
+    display: flex;
+    justify-content: center;
+    align-content:center;
+
+  }
+
+.calendar
+{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 0.5s ease;
+}
+
+footer{
+  background-color: #03074f;
+  color: #EEF5DB;
+  display: flex;
+  justify-content: center;
+}
