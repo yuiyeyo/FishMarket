@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   observer.observe(document.querySelector(".picture"));
   observer.observe(document.querySelector(".tagline"));
   observer.observe(document.querySelector(".calendar"));
-  observer.observe(document.querySelector(".parttwoheading"));
+  observer.observe(document.querySelector(".parttwo h1"));
 
 
   
